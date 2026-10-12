@@ -1,0 +1,11 @@
+.errorMessage {
+   width: 50%;
+   margin: 0 auto;
+   padding: 20px;
+}
+
+.errorMessage h1 {
+   font-size: 30px;
+   color: #704d97;
+   text-align: center;
+}

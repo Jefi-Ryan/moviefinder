@@ -1,0 +1,62 @@
+.popular-card {
+  position: relative;
+  padding: 5px;
+  width: 190px;
+  border-radius: 20px;
+  overflow: visible;
+}
+
+.popular-card:hover {
+  transform: scale(1.02);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.popular-card:hover img {
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+}
+
+.popular-card img {
+  border-radius: 20px;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.trendingCount {
+  position: absolute;
+  z-index: 1;
+  left: -24px;
+  top: -18px;
+  color: #110025;
+  font-size: 90px;
+  font-weight: 900;
+  font-style: italic;
+  line-height: 1;
+  letter-spacing: -9px;
+  opacity: 0.72;
+  -webkit-text-stroke: 3px #e9d5ff;
+  text-shadow: 0 4px 16px rgb(17 0 37 / 75%);
+  pointer-events: none;
+}
+
+@media (max-width: 600px) {
+  .popular-card {
+    width: 145px;
+    border-radius: 16px;
+  }
+
+  .popular-card img {
+    height: 220px;
+    border-radius: 12px;
+  }
+
+  .trendingCount {
+    left: -18px;
+    top: -12px;
+    font-size: 68px;
+    letter-spacing: -7px;
+    -webkit-text-stroke-width: 2px;
+  }
+}

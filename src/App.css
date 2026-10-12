@@ -1,0 +1,217 @@
+.movies{
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.card{
+  padding: 5px;
+  background-color: #321355;
+  border: 1px solid #3A0875;
+  color: white;
+  width: 190px;
+  border-radius: 20px;
+}
+
+.card:hover{
+  transform: scale(1.02);
+  transition: all 0.3s ease-in-out;
+  background-color: #3A0875;
+  cursor: pointer;
+}
+
+.card:hover img{
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+}
+
+.card:hover h1{
+  padding-top: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.card:hover p{
+  padding-top: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.card img{
+  border-radius: 20px;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.card div{
+  padding: 10px;
+}
+
+.card h1{
+  font-size: 20px;
+}
+
+.card p{
+  font-size: 15px;
+  color: #eacf24;
+}
+
+.search{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 20px 24px;
+  background: linear-gradient(180deg, rgb(50 19 85 / 60%), transparent);
+}
+
+.searchBar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: min(100%, 560px);
+  padding: 0 18px;
+  border: 1px solid rgb(233 213 255 / 22%);
+  border-radius: 999px;
+  background: rgb(17 0 37 / 85%);
+  box-shadow: 0 10px 30px rgb(0 0 0 / 18%);
+  transition: border-color 180ms ease, box-shadow 180ms ease;
+}
+
+.searchBar:focus-within {
+  border-color: #c084fc;
+  box-shadow: 0 0 0 4px rgb(192 132 252 / 18%);
+}
+
+.searchIcon {
+  width: 20px;
+  height: 20px;
+  flex: 0 0 auto;
+  stroke: #c4b5d0;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+}
+
+.searchBar input {
+  width: 100%;
+  min-width: 0;
+  padding: 14px 0;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  color: #fff;
+  font: inherit;
+}
+
+.searchBar input::placeholder {
+  color: #a99bb8;
+}
+
+.searchBar input::-webkit-search-cancel-button {
+  cursor: pointer;
+}
+
+.moviesTitle {
+  max-width: 1200px;
+  margin: 24px auto 8px;
+  padding: 0 24px;
+  color: #f5efff;
+  font-family: Inter, "Segoe UI", sans-serif;
+  font-size: clamp(24px, 3vw, 34px);
+  font-weight: 750;
+  letter-spacing: -0.04em;
+  line-height: 1.1;
+}
+
+@media screen and (max-width: 500px) {
+  .card{
+    padding: 20px;
+    font-size: 20px;
+  }
+  .search {
+    padding: 16px;
+  }
+  .movies{
+    gap: 10px;
+    grid-template-columns: auto auto;
+  }
+  .card{
+    padding: 10px;
+    width: 150px;
+  }
+  .card img{
+    height: 200px;
+  }
+  .card h1{
+    font-size: 60%;
+  }
+  .card p{
+    font-size: 10px;
+  }
+  .card div{
+    padding: 5px;
+    height: 75px;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 768px) {
+  .card{
+    padding: 20px;
+    font-size: 20px;
+  }
+  .search {
+    padding: 16px;
+  }
+  .movies{
+    gap: 10px;
+    grid-template-columns: auto auto auto;
+  }
+  .card{
+    padding: 10px;
+    width: 160px;
+  }
+  .card img{
+    height: 200px;
+  }
+  .card h1{
+    font-size: 60%;
+  }
+  .card p{
+    font-size: 10px;
+  }
+  .card div{
+    padding: 5px;
+    height: 75px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .card{
+    padding: 20px;
+    font-size: 20px;
+  }
+  .search {
+    padding: 16px;
+  }
+  .movies{
+    gap: 10px;
+    grid-template-columns: auto auto auto auto;
+  }
+  .card{
+    padding: 10px;
+    width: 170px;
+  }
+  .card img{
+    height: 200px;
+  }
+  .card h1{
+    font-size: 60%;
+  }
+  .card p{
+    font-size: 10px;
+  }
+  .card div{
+    padding: 5px;
+    height: 75px;
+  }
+}

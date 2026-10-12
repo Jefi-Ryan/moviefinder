@@ -1,0 +1,45 @@
+.suggestedSection {
+    width: 100%;
+    padding: clamp(16px, 3vw, 32px);
+}
+
+.suggestedTitle {
+    max-width: 1200px;
+    margin: 0 auto 8px;
+    padding: 0 24px;
+    color: #f5efff;
+    font-family: Inter, "Segoe UI", sans-serif;
+    font-size: clamp(24px, 3vw, 34px);
+    font-weight: 750;
+    letter-spacing: -0.04em;
+    line-height: 1.1;
+}
+
+.suggestedContainer {
+    display: flex;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin-inline: auto;
+    gap: clamp(28px, 4vw, 48px);
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 20px 24px 32px;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    overscroll-behavior-x: contain;
+}
+
+.suggestedContainer::-webkit-scrollbar {
+    display: none;
+}
+
+.suggestedContainer > * {
+    flex: 0 0 auto;
+}
+
+@media (max-width: 600px) {
+    .suggestedContainer {
+        gap: 24px;
+        padding: 16px 20px 28px;
+    }
+}
